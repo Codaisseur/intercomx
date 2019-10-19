@@ -1,0 +1,132 @@
+{
+  "pages": {
+      "type": "pages",
+      "next": null,
+      "page": 1,
+      "per_page": 50,
+      "total_pages": 1
+  },
+  "total_count": 2,
+  "limited": false,
+  "type": "user.list",
+  "users": [
+      {
+          "type": "user",
+          "id": "5dab4a033f0f871e8b4ed967",
+          "user_id": "10000002",
+          "anonymous": false,
+          "email": "john@elixir.com",
+          "phone": null,
+          "name": "John Doe",
+          "pseudonym": null,
+          "avatar": {
+              "type": "avatar",
+              "image_url": null
+          },
+          "app_id": "izyo27sm",
+          "companies": {
+              "type": "company.list",
+              "companies": []
+          },
+          "location_data": {
+              "type": "location_data",
+              "city_name": null,
+              "continent_code": null,
+              "country_name": null,
+              "postal_code": null,
+              "region_name": null,
+              "timezone": null,
+              "country_code": null
+          },
+          "last_request_at": null,
+          "created_at": 1571506691,
+          "remote_created_at": null,
+          "signed_up_at": null,
+          "updated_at": 1571506691,
+          "session_count": 0,
+          "social_profiles": {
+              "type": "social_profile.list",
+              "social_profiles": []
+          },
+          "owner_id": null,
+          "unsubscribed_from_emails": false,
+          "marked_email_as_spam": false,
+          "has_hard_bounced": false,
+          "tags": {
+              "type": "tag.list",
+              "tags": []
+          },
+          "segments": {
+              "type": "segment.list",
+              "segments": []
+          },
+          "custom_attributes": {},
+          "referrer": null,
+          "utm_campaign": null,
+          "utm_content": null,
+          "utm_medium": null,
+          "utm_source": null,
+          "utm_term": null,
+          "do_not_track": null
+      },
+      {
+          "type": "user",
+          "id": "5dab498579e4b8d73dd79221",
+          "user_id": "10000001",
+          "anonymous": false,
+          "email": "felix@elixer.com",
+          "phone": null,
+          "name": "Felix Map",
+          "pseudonym": null,
+          "avatar": {
+              "type": "avatar",
+              "image_url": null
+          },
+          "app_id": "izyo27sm",
+          "companies": {
+              "type": "company.list",
+              "companies": []
+          },
+          "location_data": {
+              "type": "location_data",
+              "city_name": null,
+              "continent_code": null,
+              "country_name": null,
+              "postal_code": null,
+              "region_name": null,
+              "timezone": null,
+              "country_code": null
+          },
+          "last_request_at": null,
+          "created_at": 1571506565,
+          "remote_created_at": null,
+          "signed_up_at": null,
+          "updated_at": 1571506565,
+          "session_count": 0,
+          "social_profiles": {
+              "type": "social_profile.list",
+              "social_profiles": []
+          },
+          "owner_id": null,
+          "unsubscribed_from_emails": false,
+          "marked_email_as_spam": false,
+          "has_hard_bounced": false,
+          "tags": {
+              "type": "tag.list",
+              "tags": []
+          },
+          "segments": {
+              "type": "segment.list",
+              "segments": []
+          },
+          "custom_attributes": {},
+          "referrer": null,
+          "utm_campaign": null,
+          "utm_content": null,
+          "utm_medium": null,
+          "utm_source": null,
+          "utm_term": null,
+          "do_not_track": null
+      }
+  ]
+}

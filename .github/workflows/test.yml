@@ -1,0 +1,31 @@
+name: Run Tests
+
+on: push
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1.0.0
+
+      - run: cp config/test.exs config/dev.exs
+
+      - uses: actions/setup-elixir@v1.0.0
+        with:
+          otp-version: 22.x
+          elixir-version: 1.9.x
+
+      - name: Install dependencies
+        run: mix deps.get
+
+      - name: Run tests
+        run: mix test
+
+      - name: Run coverage report
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+          MIX_ENV: test
+        run: |
+          mix coveralls.post --branch $GITHUB_REF --name "GitHub Push Action" --committer $GITHUB_ACTOR --sha $GITHUB_SHA

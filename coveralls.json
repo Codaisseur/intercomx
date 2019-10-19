@@ -1,0 +1,3 @@
+{
+  "skip_files": ["test/support/moneybird_mock_server.ex"]
+}
