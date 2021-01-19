@@ -4,7 +4,7 @@ defmodule IntercomX.MixProject do
   def project do
     [
       app: :intercomx,
-      version: "0.0.1",
+      version: "0.0.2",
       elixir: "~> 1.9",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
@@ -46,7 +46,7 @@ defmodule IntercomX.MixProject do
       {:httpoison, "~> 1.6"},
       {:mix_test_watch, "~> 0.8", only: :dev, runtime: false},
       {:plug_cowboy, "~> 2.0"},
-      {:poison, "~> 3.1"},
+      {:poison, ">= 4.0.1"},
     ]
   end
 
