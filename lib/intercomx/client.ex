@@ -59,6 +59,9 @@ defmodule IntercomX.Client do
           %{status_code: 404} ->
             raise IntercomX.NotFoundError
 
+          %{status_code: 429} ->
+            raise IntercomX.TooManyRequests
+
           %{body: body, status_code: 422} ->
             raise IntercomX.RequestError, Poison.decode!(body)
 
@@ -97,4 +100,8 @@ end
 
 defmodule IntercomX.ServerError do
   defexception message: "Intercom server error"
+end
+
+defmodule IntercomX.TooManyRequests do
+  defexception message: "Intercom too many requests"
 end
